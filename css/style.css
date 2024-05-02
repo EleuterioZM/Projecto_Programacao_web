@@ -1,0 +1,334 @@
+
+
+.slide{
+	
+	font-size:2vw;
+
+	color:mediumaquamarine;
+}
+.slidetext1{
+	
+}
+
+#sec{
+	margin: 10vw;
+
+}
+#sec2{
+	margin: 10vw;
+	padding: 2px ;
+	border: 1px solid gray;
+	height:81vw;
+	padding:12px;
+}
+#down{
+	margin-top: 4px;
+}
+
+#titulo{
+	margin: 6px;
+	padding: 2px ;border: 1px solid skyblue;
+	color:white;
+	text-align:center;
+}
+#nacionalidade{
+	width:30vw;
+	margin-top:6vw;
+	margin-left:-120px;
+	margin-top:4vw;
+}
+#lal{
+	margin-top:-1vw;
+	color:white;
+}
+#Localidade{
+	width:30vw;
+	margin-top:6vw;
+	margin-left:-93px;
+	margin-top:4vw;
+}
+#lo{
+	margin-top:-1vw;
+	color:white;
+}
+#Telefone{
+	
+	margin-top:-13vw;
+	margin-left:-10vw;
+	width:30vw;
+}
+#tel{
+	margin-top:-18vw;
+	color:white;
+	margin-left:35vw;
+	
+}
+#genero{
+	border:1px solid white;
+border-radius:12px;
+	margin-right:70vw;
+	margin-top:-10vw;
+	margin-left:65vw;
+	padding:12px;
+	width:140px;
+	color:white;
+}
+h5{
+	text-align:center;
+	color:white;
+}
+#t{
+	
+	color:white;
+	margin-top:-60px;
+	margin-left:35vw;
+}
+#ma{
+		width:30vw;
+	margin-top:20px;
+	margin-left:-160px;
+	
+}
+#comb{
+	margin-top:-40px;
+	margin-left:65vw;
+	margin-right:5vw;
+}
+#ID{
+	margin-top:3vw;
+	margin-left:-80px;
+}
+#id{
+	margin-top:-1vw;
+	color:white;
+}
+#na{
+	margin-left:15vw;
+	margin-top:-4vw;
+	color:white;
+	width:20vw;
+}
+#emi{
+	width:24vw;
+	margin-top:-5vw;
+	color:white;
+	margin-left:600px;
+	
+}
+#fi{
+	width:32vw;
+	margin-top:-5vw;
+	color:white;
+	margin-left:900px;
+}
+#outros{
+	width:30vw;
+	color:white;
+}
+#validationCustom02{
+	margin-top:5px;
+}
+#validationCustom00{
+	margin-top:5px;
+}
+#txt{
+	margin-left:700px;
+	margin-right:200px;
+	margin-top:-9vw;
+	color:white
+}
+#dados{
+	margin-top:2vw;
+	color:white;
+	
+}
+#pais{
+	margin-top:-158px;
+	margin-left:28vw;
+}
+#pa{
+	margin-top:-2px;
+	margin-left:28vw;
+}
+#p{
+	margin-top:-158px;
+	margin-left:57vw;
+	width:20vw;
+}
+#qq{
+	margin-top:-2px;
+margin-left:57vw;
+	width:20vw;
+}
+#diurno1{
+	margin-left:45px;
+}
+#diurno2{
+	margin-left:60px;
+}
+#ter{
+	margin-left
+}
+th,td,tr{
+	color:white;
+}
+#ch{
+margin-left:33px; 
+}
+#ch1{
+margin-left:172px;	
+}
+#ch2{
+margin-left:85px;	
+}
+#ch3{
+margin-left:5px;	
+}
+#ch4{
+margin-left:125px;	
+}
+#c{
+margin-left:172px;	
+}
+#c1{
+margin-left:63px;	
+}
+#c2{
+margin-left:52px;	
+}
+#q2{
+	margin-left:3px;
+}
+#q1{
+	margin-left:318px;
+}
+#q{
+	margin-left:215px;
+}
+#q3{
+	margin-left:39px;
+}
+#q4{
+	margin-left:250px;
+}
+#slide{
+	height:30%;
+	width:50%;
+	margin-left:20vw;
+}
+#card{
+	height:93%;
+	width:60%;
+}
+#card1{
+	height:93%;
+	width:60%;
+	margin-left:-13vw;
+}
+#card2{
+	height:93%;
+	width:60%;
+	margin-left:-26vw;
+}
+#card3{
+	height:93%;
+	width:60%;
+}
+#card4{
+	height:93%;
+	width:60%;
+		margin-left:-13vw;
+}
+#card5{
+	height:93%;
+	width:60%;
+	margin-left:-26vw;
+}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background:rgba(105,105,105,0.9);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color:white;
+
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: rgba(176,224,230);
+	display: block;
+
+}
+.footer-col ul li a:hover{
+	color:rgb(97, 191, 232);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+

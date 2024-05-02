@@ -1,0 +1,613 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!-- Bacground-->
+<style>
+body{
+
+ 
+  background-color:rgba(221,68,12,0.7);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+
+  }
+
+
+#img{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  max-width: 800px;
+ position: relative;
+
+}
+</style>
+
+
+  </head>
+  <body>
+ 
+      <header>
+        
+ <img src="img/Black logo - no background.png" height="60px;" width="90px;">
+
+          <!--BARRA DE NAVEGACAO-->
+  <nav class="navbar" data-bs-theme="dark">
+  <div class="container-fluid" style="background:rgba(0, 0, 0, 1.0); height: 5vw;">
+   <div>
+    <a href="#"><i class="fab fa-facebook-f"  style="margin-right: 10px;"></i></a>
+            <a href="#"><i class="fab fa-twitter" style="margin-right: 10px;"></i></a >
+            <a href="#"><i class="fab fa-instagram" style="margin-right: 10px;"></i></a>
+            <a href="#"><i class="fab fa-whatsapp" style="margin-right: 10px;"></i></a>
+    </div>
+    <a class="navbar-brand" href="#">Gestao de Matriculas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" target="_black">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+      </header>
+	<!--
+   <img src="img/white logo - no background.png" height="100px;" width="100px;" style="margin-top: 2vw; margin-left: 48vw;">
+ -->
+              <section id="sec2">
+			  <form name="Formulario_Matricula" action="http://localhost/processo.php" method="POST" enctype="application/XWWW-form-urlencoded">
+                <h2 id="titulo">Formulario de  Matrícula</h2>
+                <div class="input-group" id="s">
+  <span class="input-group-text">Nome e Apelido</span>
+  <input type="text" aria-label="First name" class="form-control" name="Firstname" id="Firstname">
+  <input type="text" aria-label="Last name" class="form-control" name="lastname" id="lastname">
+</div>
+<div id="down">
+<div class="row g-3 align-items-center">
+  <div class="col-auto" id="lal">
+    <label for="inputtext6" class="col-form-label">Nacionalidade</label>
+  </div>
+  
+  <div class="col-auto" id="nacionalidade">
+    <input type="text" id="inputtext6" class="form-control" aria-labelledby="passwordHelpInline" id="Nacionalidade" name="Nacionalidade">
+  </div>
+  <div class="col-auto">
+    <span id="textHelpInline" class="form-text">
+   
+    </span>
+  </div>
+</div>
+</div>
+
+ <div id="down">
+<div class="row g-3 align-items-center">
+  <div class="col-auto" id="lo">
+    <label for="inputtext6" class="col-form-label">Localidade</label>
+  </div>
+  
+  <div class="col-auto" id="Localidade">
+    <input type="text" id="inputtext6" class="form-control" aria-labelledby="passwordHelpInline" name="Localidade" id="Localidade">
+  </div>
+  <div class="col-auto">
+    <span id="textHelpInline" class="form-text">
+   
+    </span>
+  </div>
+</div>
+</div>
+
+
+
+
+
+ <div id="down">
+<div class="row g-3 align-items-center">
+  <div class="col-auto" id="tel">
+    <label for="inputtext6" class="col-form-label">Numero do telefone</label>
+  </div>
+  
+  <div class="col-auto" id="Telefone">
+    <input type="text" id="inputtext6" class="form-control" aria-labelledby="passwordHelpInline" name="Telefone" id="Telefone">
+  
+  </div>
+
+  <div class="col-auto">
+    <span id="textHelpInline" class="form-text">
+   
+    </span>
+  </div>
+</div>
+</div>
+
+
+<div id="genero">
+<h5><u>Genero</u></h5>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Masculino
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+  Femenino
+  </label>
+</div>
+</div>
+
+
+<div id="down">
+<div class="row g-3 align-items-center">
+  <div class="col-auto" id="t">
+    <label for="e-mail" class="col-form-label">E-mail do estudante</label>
+  </div>
+  
+  <div class="col-auto" id="ma">
+    <input type="e-mail" id="inputtext6" class="form-control" aria-labelledby="e-mailHelpInline" name="inputtext6">
+  </div>
+  <div class="col-auto">
+    <span id="textHelpInline" class="form-text">
+   
+    </span>
+  </div>
+</div>
+</div>
+<div id="comb">
+<select class="form-select" aria-label="Disabled select example"  required id="selecte" name="selecte">
+  <option selected>Incricao</option>
+  <option value="1">Licenciatura-online</option>
+  <option value="2">Mestrado-online</option>
+  <option value="3">Doutouramento-online</option>
+  <option value="3">Licenciatura-presencial</option>
+  <option value="3">Mestrado-presencial</option>
+  <option value="3">Doutouramento-presencial</option>
+</select>
+</div>
+
+
+
+
+
+<div id="down">
+<div class="row g-3 align-items-center">
+  <div class="col-auto" id="id">
+    <label for="inputtext6" class="col-form-label">BI/Passp.</label>
+  </div>
+  
+  <div class="col-auto" id="ID">
+    <input type="text" id="inputtext6" class="form-control" placeholder="BI/Passp." name="id">
+  </div>
+  <div class="col-auto">
+    <span id="textHelpInline" class="form-text">
+   
+    </span>
+  </div>
+</div>
+</div>
+<div class="form-row">
+ <div class="col-md-6 mb-3" id="na">
+      <label for="validationCustom03">Data de Nascimento</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="DD/MM/AAAA"  required name="Nascimento">
+      
+    </div>
+	</div>
+	
+	
+
+    <div id="emi">
+     <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Data de emissão</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Data Emissão" required name="emissão">
+      
+    </div>
+  </div>
+  
+  
+  <div id="fi">
+     <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Filiacão</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Filiacão" required name="Filiacão">
+      
+    </div>
+  </div>
+  <div id="outros">
+  <label for="validationCustom03">Em caso de necessidade, contactar:</label>
+ <input type="text" class="form-control" id="validationCustom03" placeholder="Nome"  required name="Nome1">
+ <input type="text" class="form-control" id="validationCustom02" placeholder="Endereco"  required name="Endereco1">
+  <input type="text" class="form-control" id="validationCustom00" placeholder="Telefone"  required name="Telefone1">
+  </div>
+  
+  <div class="mb-3" id="txt">
+  <label for="exampleFormControlTextarea1" class="form-label">Sofre de alguma doenca, se sim descreva.</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required name="doenca"></textarea>
+</div>
+<legend id="dados">Dados Escolares</legend>
+
+  <div class="form-row">
+   <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername" style="color:white;">Anexa o seu certificado da 12 classe</label>
+      <div class="mb-3" width="30vw;">
+  <label for="formFileDisabled" class="form-label"></label>
+  <input class="form-control" type="file" id="formFileDisabled">
+</div>
+    </div>
+	
+	 <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername" style="color:white;">Instituicao aonde concluiu o ensino medio</label>
+      <div class="input-group">
+      
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Nome da Escola" name="$seccao" aria-describedby="inputGroupPrepend" required>
+       
+      </div>
+    </div>
+	<div class="col-md-4 mb-3" id="pais">
+      <label for="validationCustomUsername" style="color:white;">Pais</label>
+      <div class="input-group">
+      
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Pais onde estudou" name="$seccao" aria-describedby="inputGroupPrepend" required>
+       
+      </div>
+    </div>
+	
+	<div class="col-md-4 mb-3" id="pa">
+      <label for="validationCustomUsername" style="color:white;">Pais</label>
+      <div class="input-group">
+      
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Pais onde estudou" name="$seccao" aria-describedby="inputGroupPrepend" required>
+       
+      </div>
+    </div>
+	
+	<div class="col-md-4 mb-3" id="p">
+      <label for="validationCustomUsername" style="color:white;">Pais</label>
+      <div class="input-group">
+      
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Pais onde estudou" name="$seccao" aria-describedby="inputGroupPrepend" required>
+       
+      </div>
+    </div>
+	
+	
+	<div class="col-md-4 mb-3" id="qq">
+      <label for="validationCustomUsername" style="color:white;">Pais</label>
+      <div class="input-group">
+      
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Pais onde estudou" name="$seccao" aria-describedby="inputGroupPrepend" required>
+       
+      </div>
+    </div>
+	<legend id="dados" style="color:black;">Campo de Matricula</legend>
+	
+	<div>
+	<table class="table">
+  <thead>
+    <tr>
+    
+      <th scope="col"></th>
+      <th scope="col">Licenciatura</th>
+      <th scope="col">Precedencias</th>
+	    <th scope="col">Turno</th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+    <tr>
+	
+      <th scope="row"></th>
+	  
+      <td>Ciências Económicas e Sociais <input type="checkbox" id="diurno"  value="Ciências Económicas e Sociais"></td>
+    
+	  
+	  <td>
+	    <ol type="1">
+	  
+	  <li>Licenciatura em Administração e Gestão de Empresas  <input  type="radio" name="opcao"  id="ch"  value="Ciências Económicas e Sociais"></li>
+	  <li>Licenciatura em Gestão Financeira <input  type="radio" name="opcao"  id="ch1"  value="Ciências Económicas e Sociais"></li>
+	  <li>Licenciatura em Gestão de Recursos Humanos <input  type="radio" name="opcao"  id="ch2"  value="Ciências Económicas e Sociais"></li>
+	  <li>Licenciatura em Gestão de Marketing e Relações Públicas <input  type="radio" name="opcao"  id="ch3"  value="Ciências Económicas e Sociais"></li>
+	  <li>Licenciatura em Contabilidade e Auditoria <input type="radio" name="opcao" id="ch4"  value="Ciências Económicas e Sociais"></li>
+	 
+
+
+
+</ol>
+	  
+	  </td>
+	 
+      <td>
+	 	<div id="turno">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+   Laboral
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+  Pos-laboral
+  </label>
+</div>
+</div>
+	  </td>
+	   
+    </tr>
+	<!--Licenciatura em Jurídico - Forense-->
+    <tr>
+      <th scope="row"></th>
+      <td>Licenciatura em Jurídico<input type="checkbox" id="diurno1"  value="Licenciatura em Jurídico"></td>
+     
+
+<td> 
+<ol type="1">
+<li>Licenciatura em Jurídico - Forense <input  type="radio" name="opcao"  id="c"  value="Ciências Económicas e Sociais"></li>
+<li>Licenciatura em Jurídico - Político - Constitucional <input type="radio" name="opcao"  id="c1"  value="Ciências Económicas e Sociais"></li>
+<li>Licenciatura em Jurídico - Económico - Empresarial <input  type="radio" name="opcao"  id="c2"  value="Ciências Económicas e Sociais"></li>
+</ol>
+</td>
+      <td>
+	  
+	  	<div id="turno">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+   Laboral
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+  Pos-laboral
+  </label>
+</div>
+</div>
+	  </td>
+	  
+	  
+	  
+	  
+	  
+    </tr>
+<!--Ciências Tecnologicas-->
+
+    <tr>
+      <th scope="row"></th>
+      <td>Ciências Tecnologicas <input type="checkbox" id="diurno2"  value="Ciências Tecnologicas"></td>
+     
+
+<td> 
+<ol type="1">
+<li>Licenciatura em Engenharia Ambiental e Gestão de Desastres <input   type="radio" name="opcao" id="q"  value="Ciências Económicas e Sociais"></li>
+<li>Licenciatura em Engenharia e Gestão Industrial <input   type="radio" name="opcao"  id="q1"  value="Ciências Económicas e Sociais"></li>
+<li>Licenciatura em Engenharia e Gestão de Tecnologias de Informação e Comunicação (TIC's) <input type="radio" name="opcao"  id="q2"  value="Ciências Económicas e Sociais"></li>
+<li>Licenciatura em Engenharia e Gestão de Energias Renováveis e Recursos Petrolíferos <input  type="radio" name="opcao"  id="q3"  value="Ciências Económicas e Sociais"></li>
+<li>Licenciatura en Engenharia e Gestão de Construção Civil <input  type="radio" name="opcao"  id="q4"  value="Ciências Económicas e Sociais"></li>
+
+</ol>
+</td>
+
+
+
+
+
+
+
+
+
+      <td>	<div id="turno">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+   Laboral
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+  Pos-laboral
+  </label>
+</div>
+</div>
+</td>
+	  
+	  
+	  
+	 
+    </tr>
+	
+	
+	  
+	  
+	  
+   
+
+	<!--
+	
+	
+	
+	
+	   <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Ciências Jurídicas <input type="checkbox" id="diurno2"  value="Ciências Jurídicas"></td>
+	  
+	  
+	  
+      <td> 
+	  
+	  <ol type="1" id="ter">
+	  <li>Licenciatura em Jurídico - Forense</li>
+<li>Licenciatura em Jurídico - Político - Constitucional</li>
+<li>Licenciatura em Jurídico - Económico - Empresarial</li>
+	  </ol>
+	  </td>
+      <td>@fat</td>
+    </tr>
+	
+	
+	-->
+	
+
+ 
+  </tbody>
+</table>
+	</div>
+	
+	
+	  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck" style="color:green;">
+        Concordo com todos os termos e condicoes,preechi todos os campos obrigatorios.
+      </label>
+      <div class="invalid-feedback">
+        Voce deve concordar, antes de continuar.
+      </div>
+    </div>
+  </div>
+   
+
+  <button class="btn btn-primary" type="submit">Enviar</button>
+	</form>
+         </section>
+         <!--
+<div style="background-color: white; height: 2vw;">
+
+CCSc
+</div>
+                        <footer class="footer">
+     <div class="container" >
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+
+
+
+-->
+
+  <footer class="footer">
+  
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				
+					<a href="#"><i class="fab fa-whatsapp"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+<div>
+<nav style="background:rgba(255,255,255,0.80); height:3vw;padding:12px; font-style:arial;">
+<ul>
+<li style=" margin-left:12vw;">Todos direitos reservados ao Eleuterio Zacarias Mabecuane <a href="#">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+</svg>
+
+</a></li>
+</ul>
+</nav>
+</div>
+              <script src="js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
